@@ -90,6 +90,8 @@ section.block {
     flex-direction: row;
     width: 75%;
     margin-bottom: 75px;
+    opacity: 20%;
+    will-change: opacity;
 }
 
 section.block p {
