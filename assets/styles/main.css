@@ -1,0 +1,79 @@
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 6em;
+    transition: 0.5s cubic-bezier(0, 1.11, .59, 1);
+    background-color: black;
+}
+
+.red {
+    opacity: 20%;
+    color: white;
+}
+
+.red:hover {
+    color: #A90114;
+    opacity: 100%;
+    transform: translateX(100px);
+}
+
+.yellow {
+    opacity: 20%;
+    color: white;
+}
+
+.yellow:hover {
+    color: #DCA303;
+    opacity: 100%;
+    transform: translate(100px);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 20px;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    width: 100%;
+    top: 0;
+}
+
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    line-height: 1.7;
+    background-color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.title {
+    text-align: left;
+}
+
+.footer {
+    bottom: 10px;
+    align-items: left;
+    justify-items: left;
+}
