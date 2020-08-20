@@ -73,7 +73,7 @@ section {
 }
 
 .footer {
-    bottom: 10px;
+    bottom: 0px;
     align-items: left;
     justify-items: left;
 }
