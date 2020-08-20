@@ -39,6 +39,7 @@ header {
     text-transform: uppercase;
     width: 100%;
     top: 0;
+    margin-bottom: 50px;
 }
 
 body {
@@ -80,23 +81,21 @@ section.hero-section .yellow.title:hover {
     color: #DCA303;
 }
 
+section.title {
+    margin-bottom: 25px;
+}
+
 section.block {
     display: flex;
     flex-direction: row;
-    width: 65%;
-    margin-top: 50px;
-    margin-left: 350px;
-    margin-bottom: 100px
-}
-
-section.block h2 {
-    margin-bottom: 25px;
+    width: 75%;
+    margin-bottom: 75px;
 }
 
 section.block p {
     color: white;    
-    margin-top: 25px;
     margin-left: 150px;
+    margin-top: 25px;
 }
 
 .footer {
@@ -111,4 +110,9 @@ section.block p {
 
 .follow {
     text-transform: uppercase;
+}
+
+main {
+    margin-left: 350px;
+    margin-bottom: 100px
 }
