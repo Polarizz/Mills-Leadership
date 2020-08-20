@@ -58,7 +58,8 @@ section.hero-section {
     background-color: #1c1c1e;
     height: 100%;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 190px;
 }
 
 section.hero-section .title {
@@ -81,10 +82,11 @@ section.hero-section .yellow.title:hover {
 
 section.block {
     display: flex;
-    flex-direction: column;
-    width: 60%;
+    flex-direction: row;
+    width: 65%;
     margin-top: 50px;
     margin-left: 350px;
+    margin-bottom: 100px
 }
 
 section.block h2 {
@@ -92,13 +94,21 @@ section.block h2 {
 }
 
 section.block p {
-    color: white;
+    color: white;    
+    margin-top: 25px;
+    margin-left: 150px;
 }
 
-
-
 .footer {
-    margin-top: 70px;
-    align-items: left;
-    justify-items: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.follow {
+    text-transform: uppercase;
 }
