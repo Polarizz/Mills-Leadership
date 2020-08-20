@@ -10,30 +10,17 @@ h1 {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 6em;
-    transition: 0.5s cubic-bezier(0, 1.11, .59, 1);
-    background-color: black;
 }
 
-.red {
-    opacity: 20%;
-    color: white;
+h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 4em;
 }
 
-.red:hover {
-    color: #A90114;
-    opacity: 100%;
-    transform: translateX(100px);
-}
-
-.yellow {
-    opacity: 20%;
-    color: white;
-}
-
-.yellow:hover {
-    color: #DCA303;
-    opacity: 100%;
-    transform: translate(100px);
+p {
+    font-weight: 400;
+    font-size: 1.3em;
 }
 
 a {
@@ -57,23 +44,61 @@ header {
 body {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
     line-height: 1.7;
-    background-color: black;
+    background-color: #1c1c1e;
 }
 
 section {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    align-items: center;
-    margin: 50px;
+    width: 100%;
 }
 
-.title {
-    text-align: left;
+section.hero-section {
+    background-color: #1c1c1e;
+    height: 100%;
+    align-items: center;
+    margin-top: 50px;
 }
+
+section.hero-section .title {
+    transition: transform 0.5s cubic-bezier(0, 1.11, .59, 1);
+    color: white;
+    opacity: 20%;
+}
+
+section.hero-section .red.title:hover {
+    transform: translateX(100px);
+    opacity: 100%;
+    color: #A90114;
+}
+
+section.hero-section .yellow.title:hover {
+    transform: translateX(100px);
+    opacity: 100%;
+    color: #DCA303;
+}
+
+section.block {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 350px;
+}
+
+section.block h2 {
+    margin-bottom: 25px;
+}
+
+section.block p {
+    color: white;
+}
+
+
 
 .footer {
-    bottom: 0px;
+    margin-top: 70px;
     align-items: left;
     justify-items: left;
 }
