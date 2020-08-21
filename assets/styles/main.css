@@ -193,6 +193,10 @@ footer p {
     font-size: 1.3em;
 }
 
+footer svg {
+    color: #A90114;
+}
+
 footer .footer-section {
     display: flex;
     justify-content: center;
