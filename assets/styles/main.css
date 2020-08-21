@@ -298,3 +298,45 @@ footer .footer-section-skinny .container {
         font-size: 1.2em;
     }
 }
+
+.row  {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 40px 0;
+}
+
+.carousel img {
+    height: 450px;
+    min-height: 400px;
+    width: 50%;
+    max-width: 600px;
+    min-width: 500px;
+    object-fit: cover;
+}
+
+.imgblock {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0 10%;
+    max-width: 1100px;
+    min-height: 30vh;
+    opacity: 1;
+    justify-content: center;
+    align-items: flex-start;
+    transition: opacity 0.3s ease-out;
+}
+
+.imgblock h2 {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.imgblock p {
+    color: white;
+    opacity: .6;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
