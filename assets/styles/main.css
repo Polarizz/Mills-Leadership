@@ -43,7 +43,7 @@ body#home {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    backdrop-filter: blur(10px) brightness(.75);
+    backdrop-filter: blur(15px) brightness(.65);
 }
 
 header {
@@ -53,7 +53,7 @@ header {
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-weight: 700;
     opacity: 0.8;
     width: 100%;
@@ -86,7 +86,7 @@ section.hero-section {
 }
 
 section.hero-section .title {
-    transition: all .5s cubic-bezier(0, 1.11, .59, 1);
+    transition: all 0.7s cubic-bezier(0, 1.11, .59, 1);
     color: white;
     opacity: 35%;
 }
@@ -131,9 +131,15 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    opacity: 0.8;
     width: 100%;
     color: white;
+}
+
+footer a {
+    margin: 20px;
 }
 
 .follow {
