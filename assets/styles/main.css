@@ -14,7 +14,8 @@ h1 {
 
 h2 {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 1px;
     font-size: 4em;
 }
 
@@ -46,14 +47,14 @@ header {
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 700;
     opacity: 0.8;
     color: white;
     overflow-x: hidden;
     z-index: 11;
     width: 80%;
     max-width: 1400px;
+    font-weight: 400;
+    letter-spacing: 1px; 
 }
 
 header a,
@@ -79,8 +80,7 @@ header a:hover>svg {
 
 header svg {
     margin-right: 10px;
-    background-size: 25px 25px;
-    color: #DCA303;
+    color: white;
 }
 
 main {
@@ -101,7 +101,7 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    filter: blur(3px) brightness(.65);
+    filter: blur(2px) brightness(.65);
     transform: scale(1.1);
 }
 
@@ -126,6 +126,10 @@ section.hero-section .title {
     transition: all 0.7s cubic-bezier(0, 1.11, .59, 1);
     color: white;
     opacity: 35%;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
 }
 
 section.hero-section .title:hover {
@@ -135,7 +139,6 @@ section.hero-section .title:hover {
 }
 
 section.title {
-    margin: 30px 0;
     text-align: center;
     width: 80%;
     max-width: 1400px;
@@ -156,14 +159,18 @@ section.block {
 }
 
 section.block h2 {
-    opacity: .35;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 section.block p {
     color: white;
     margin-left: 150px;
     margin-top: 25px;
-    opacity: 1;
+    opacity: .6;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 footer {
@@ -176,16 +183,18 @@ footer {
 
 footer h2 {
     font-weight: 700;
+    letter-spacing: 1px; 
     font-size: 4em;
 }
 
 footer p {
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: 1px;    
     font-size: 1.3em;
 }
 
 footer svg {
-    color: #DCA303;
+    color: black;
 }
 
 footer .footer-section {
@@ -205,7 +214,7 @@ footer .container {
     justify-content: space-between;
     align-items: center;
     transition: opacity .2s ease-out;
-    opacity: .35;
+    opacity: .2;
     flex-wrap: wrap;
 }
 
