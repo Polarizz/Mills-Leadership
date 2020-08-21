@@ -102,6 +102,7 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    z-index: -1;
     filter: blur(2px) brightness(.65);
     transform: scale(1.1);
 }
@@ -124,7 +125,7 @@ section.hero-section {
 }
 
 section.hero-section .title {
-    transition: all 0.7s cubic-bezier(0, 1.11, .59, 1);
+    transition: all 0.5s cubic-bezier(0, 1.11, .59, 1);
     color: white;
     opacity: 35%;
     font-weight: 700;
