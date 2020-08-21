@@ -128,13 +128,12 @@ section.hero-section .title {
     color: white;
     opacity: 35%;
     font-weight: 700;
-    margin-top: 25px;
-    margin-bottom: 25px;
-
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 section.hero-section .title:hover {
-    margin: 80px 0;
+    padding: 80px 0;
     transform: scale(1.2);
     opacity: 100%;
 }
