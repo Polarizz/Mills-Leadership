@@ -72,7 +72,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 section {
@@ -136,7 +136,7 @@ footer {
     opacity: 0.8;
     width: 100%;
     color: white;
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
 footer a {
