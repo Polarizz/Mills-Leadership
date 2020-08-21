@@ -270,7 +270,7 @@ footer .footer-section-skinny .container {
         font-size: 3em;
     }
     main {
-        min-height: 70vh;
+        min-height: 90vh;
     }
     section.hero-section .title {
         opacity: 1;
@@ -283,14 +283,16 @@ footer .footer-section-skinny .container {
     footer {
         font-size: 70%;
     }
+    footer .footer-section-skinny .container span{
+        display: block;
+    }
+
+    footer .footer-section-skinny .container svg {
+        transform: scale(1.7);
+    }
 }
 
 @media all and (max-width: 500px) {
-    footer .container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
     h2 {
         font-size: 12vw;
     }
