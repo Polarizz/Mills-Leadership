@@ -80,6 +80,7 @@ header a:hover>svg {
 }
 
 header svg {
+    color: var(--accent-color);
     margin-right: 10px;
 }
 
@@ -193,6 +194,10 @@ footer p {
     font-size: 1.3em;
 }
 
+footer svg {
+    color: var(--accent-color);
+}
+
 footer .footer-section {
     display: flex;
     justify-content: center;
@@ -225,7 +230,19 @@ footer .footer-section.secondary {
 footer .footer-section-skinny {
     display: flex;
     background: #1c1c1e;
+    justify-content: center;
+    align-items: center;
     height: 100px;
+    width: 100%;
+    color: white;
+}
+
+footer .footer-section-skinny span {
+    margin-right: 20px;
+}
+
+footer .footer-section-skinny .container {
+    opacity: 1;
 }
 
 .follow {
