@@ -81,7 +81,6 @@ header a:hover>svg {
 
 header svg {
     margin-right: 10px;
-    color: white;
 }
 
 main {
@@ -192,10 +191,6 @@ footer p {
     font-weight: 400;
     letter-spacing: 1px;    
     font-size: 1.3em;
-}
-
-footer svg {
-    color: #A90114;
 }
 
 footer .footer-section {
