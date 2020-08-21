@@ -26,17 +26,24 @@ p {
 a {
     text-decoration: none;
     color: inherit;
-    margin: 20px;
 }
 
 body {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
     line-height: 1.7;
-    background-color: #1c1c1e;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
+    background: #1c1c1c;
+}
+
+body#home {
+    background: url("/assets/images/millsgym.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(10px) brightness(.75);
 }
 
 header {
@@ -52,6 +59,10 @@ header {
     width: 100%;
     top: 0;
     color: white;
+}
+
+header a {
+    margin: 20px;
 }
 
 main {
@@ -70,24 +81,25 @@ section {
 }
 
 section.hero-section {
-    background-color: #1c1c1e;
     height: 100%;
     align-items: center;
 }
 
 section.hero-section .title {
-    transition: transform .5s cubic-bezier(0, 1.11, .59, 1);
+    transition: all .5s cubic-bezier(0, 1.11, .59, 1);
     color: white;
-    opacity: 20%;
+    opacity: 35%;
 }
 
 section.hero-section .title:hover {
-    transform: translateX(50px);
+    margin: 80px 0;
+    transform: scale(1.2);
     opacity: 100%;
 }
 
 section.title {
-    margin-bottom: 25px;
+    margin: 30px;
+    margin-right: 0;
 }
 
 section.block {
