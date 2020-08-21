@@ -59,10 +59,12 @@ header {
     width: 100%;
     top: 0;
     color: white;
+    overflow-x: hidden;
 }
 
 header a {
     margin: 20px;
+    margin-bottom: 0;
 }
 
 main {
@@ -70,6 +72,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 section {
@@ -109,20 +112,17 @@ section.block {
     padding: 0 10%;
     max-width: 1200px;
     min-height: 30vh;
-    opacity: .2;
+    opacity: 1;
     justify-content: center;
     align-items: center;
     transition: opacity 0.3s ease-out;
-}
-
-section.block:hover {
-    opacity: 1;
 }
 
 section.block p {
     color: white;
     margin-left: 150px;
     margin-top: 25px;
+    opacity: 0.8;
 }
 
 footer {
@@ -136,14 +136,30 @@ footer {
     opacity: 0.8;
     width: 100%;
     color: white;
+    overflow-x: hidden;
 }
 
 footer a {
-    margin: 20px;
+    margin: 30px;
+    margin-bottom: 0;
 }
 
 .follow {
     text-transform: uppercase;
+}
+
+@media all and (max-width: 700px) {
+    h1 {
+        font-size: 15vw;
+    }
+    section.hero-section .title {
+        opacity: 1;
+    }
+    section.hero-section .title:hover {
+        margin: 0;
+        transform: scale(1);
+        opacity: 100%;
+    }
 }
 
 @media all and (max-width: 1200px) {
@@ -155,4 +171,3 @@ footer a {
         margin: 0;
     }
 }
-   
