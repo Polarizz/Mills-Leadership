@@ -27,7 +27,16 @@ a {
     text-decoration: none;
     color: inherit;
     margin: 20px;
-    color: white;
+}
+
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    line-height: 1.7;
+    background-color: #1c1c1e;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
@@ -37,15 +46,19 @@ header {
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    opacity: 0.8;
     width: 100%;
     top: 0;
-    margin-bottom: 50px;
+    color: white;
 }
 
-body {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-    line-height: 1.7;
-    background-color: #1c1c1e;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 section {
@@ -53,32 +66,24 @@ section {
     flex-direction: column;
     justify-items: center;
     width: 100%;
+    color: white;
 }
 
 section.hero-section {
     background-color: #1c1c1e;
     height: 100%;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 190px;
 }
 
 section.hero-section .title {
-    transition: transform 0.5s cubic-bezier(0, 1.11, .59, 1);
+    transition: transform .5s cubic-bezier(0, 1.11, .59, 1);
     color: white;
     opacity: 20%;
 }
 
-section.hero-section .red.title:hover {
-    transform: translateX(100px);
+section.hero-section .title:hover {
+    transform: translateX(50px);
     opacity: 100%;
-    color: #A90114;
-}
-
-section.hero-section .yellow.title:hover {
-    transform: translateX(100px);
-    opacity: 100%;
-    color: #DCA303;
 }
 
 section.title {
@@ -88,19 +93,27 @@ section.title {
 section.block {
     display: flex;
     flex-direction: row;
-    width: 75%;
-    margin-bottom: 75px;
-    opacity: 20%;
-    -webkit-transition: opacity 0.5s ease-in-out;
+    width: 80%;
+    padding: 0 10%;
+    max-width: 1200px;
+    min-height: 30vh;
+    opacity: .2;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-out;
+}
+
+section.block:hover {
+    opacity: 1;
 }
 
 section.block p {
-    color: white;    
+    color: white;
     margin-left: 150px;
     margin-top: 25px;
 }
 
-.footer {
+footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -108,13 +121,19 @@ section.block p {
     justify-content: space-between;
     text-transform: uppercase;
     width: 100%;
+    color: white;
 }
 
 .follow {
     text-transform: uppercase;
 }
 
-main {
-    margin-left: 350px;
-    margin-bottom: 300px
+@media all and (max-width: 1200px) {
+    section.block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    section.block p {
+        margin: 0;
+    }
 }

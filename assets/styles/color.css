@@ -10,6 +10,14 @@
     color: #A90114;
 }
 
+.red-hover:hover {
+    color: #A90114 !important;
+}
+
 .yellow {
     color: #DCA303;
+}
+
+.yellow-hover:hover {
+    color: #DCA303 !important;
 }
