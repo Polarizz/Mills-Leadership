@@ -399,6 +399,9 @@ footer .footer-section-skinny .container {
 }
 
 @media all and (max-width: 500px) {
+    .zoom-btn {
+        display: flex;
+    }
     section.block h2 {
         font-size: 12vw;
     }
