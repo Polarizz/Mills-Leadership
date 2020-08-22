@@ -213,7 +213,8 @@ section.img-block .flickity-viewport {
 }
 
 section.img-block .flickity-viewport {
-    border-radius: 10px;
+    border-radius: 10px !important;
+    z-index: 2;
 }
 
 section.img-block>.text {
