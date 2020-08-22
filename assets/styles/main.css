@@ -107,8 +107,26 @@ main {
     filter: blur(2px) brightness(.65);
 }
 
-animation-group {
-    display: block;
+.zoom-btn {
+    padding: 10px 20px;
+    border-radius: 10px 10px;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    background: rgb(22, 131, 255);
+    margin: 30px 0;
+    transition: all .3s ease-out;
+}
+
+.zoom-btn:hover {
+    box-shadow: rgba(0, 114, 207, 0.363) 0 5px 20px;
+}
+
+.zoom-btn svg {
+    color: #ffffffda;
+    margin-right: 20px;
 }
 
 section {
@@ -194,6 +212,10 @@ section.img-block .flickity-viewport {
     height: 400px;
 }
 
+section.img-block .flickity-viewport {
+    border-radius: 10px;
+}
+
 section.img-block>.text {
     margin-left: 150px;
     flex-shrink: 6;
@@ -230,6 +252,7 @@ section.img-block p {
     width: 100%;
     height: 100%;
     background-size: cover !important;
+    background-position: center !important;
     overflow: hidden;
 }
 
@@ -342,10 +365,10 @@ footer .footer-section-skinny .container {
 }
 
 @media all and (max-width: 700px) {
-    h1:not(.carousel h1) {
+    section.hero-section h1 {
         font-size: 13vw;
     }
-    h2 {
+    section.block h2 {
         font-size: 3em;
     }
     main {
@@ -359,6 +382,9 @@ footer .footer-section-skinny .container {
         transform: scale(1);
         opacity: 100%;
     }
+    .flickity-button {
+        display: none;
+    }
     footer {
         font-size: 70%;
     }
@@ -371,7 +397,7 @@ footer .footer-section-skinny .container {
 }
 
 @media all and (max-width: 500px) {
-    h2 {
+    section.block h2 {
         font-size: 12vw;
     }
     p:not(.carousel p) {
