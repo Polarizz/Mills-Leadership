@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="/assets/styles/color.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js" crossorigin="anonymous"></script>
 
+    <!-- Carosel Code Imports ONLY -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <title>Mills Leadership - Events</title>
 </head>
 
@@ -23,41 +27,65 @@
     </header>
     <header data-aos="fade-left" data-aos-delay="1000" data-aos-mirror="false">
         <a href="/">
-            <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-left fa-w-10 fa-2x"><g class="fa-group"><path fill="currentColor" d="M285.59 410.4a23.93 23.93 0 0 1 0 33.84l-22.7 22.65a24 24 0 0 1-33.94 0l-154.31-154L131.42 256z" class="fa-secondary"></path><path fill="currentColor" d="M262.85 45.06l22.7 22.65a23.93 23.93 0 0 1 0 33.84L74.58 312.9l-40-40a23.94 23.94 0 0 1 0-33.84l194.33-194a24 24 0 0 1 33.94 0z" class="fa-primary"></path></g></svg>
-            Back
+            <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-left fa-w-10 fa-2x"><g class="fa-group"><path fill="currentColor" d="M285.59 410.4a23.93 23.93 0 0 1 0 33.84l-22.7 22.65a24 24 0 0 1-33.94 0l-154.31-154L131.42 256z" class="fa-secondary"></path><path fill="currentColor" d="M262.85 45.06l22.7 22.65a23.93 23.93 0 0 1 0 33.84L74.58 312.9l-40-40a23.94 23.94 0 0 1 0-33.84l194.33-194a24 24 0 0 1 33.94 0z" class="fa-primary"></path></g></svg>            Back
         </a>
     </header>
 
     <main>
         <section class="block" data-aos="fade-up" data-aos-duration="800">
             <h2 style="color: #A90114">events</h2 data-aos="fade">
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content
+                here, content here’, making it look like readable English.</p>
         </section>
 
-        <section class="row" data-aos="fade-up" data-aos-duration="800">
+        <section class="img-block" data-aos="fade-up" data-aos-duration="800">
             <div class="carousel">
-                <img src="/assets/images/gym.jpg">
+                <div class="carousel-cell" style="background: url(/assets/images/128.jpg)">
+                    <div class="text">
+                        <h1>Event #1</h1>
+                        <h2>Subtitle about the event.</h2>
+                    </div>
+                </div>
+                <div class="carousel-cell" style="background: url(/assets/images/gym.jpg)">
+                    <div class="text">
+                        <h1>Event #2</h1>
+                        <h2>Subtitle about the event.</h2>
+                    </div>
+                </div>
+                <div class="carousel-cell" style="background: url(/assets/images/theater.jpeg)">
+                    <div class="text">
+                        <h1>Event #3</h1>
+                        <h2>Subtitle about the event.</h2>
+                    </div>
+                </div>
             </div>
 
-            <div class="imgblock">
+            <div class="text">
                 <h2 style="color: white">event #1</h2 data-aos="fade">
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content
-                    here, content here’, making it look like readable English.</p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                    ‘Content here, content here’, making it look like readable English.</p>
             </div>
         </section>
 
-        <section class="row" data-aos="fade-up" data-aos-duration="800">
-            <div class="imgblock">
+        <section class="img-block alt" data-aos="fade-up" data-aos-duration="800">
+            <div class="text">
                 <h2 style="color: white">event #2</h2 data-aos="fade">
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content
-                    here, content here’, making it look like readable English.</p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                    ‘Content here, content here’, making it look like readable English.</p>
             </div>
 
             <div class="carousel">
-                <img src="/assets/images/128.jpg">
+                <div class="carousel-cell">
+                    <img src="/assets/images/gym.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img src="/assets/images/millsgym.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img src="/assets/images/theater.jpeg">
+                </div>
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -93,7 +121,7 @@
         </div>
     </footer>
     <style>
-        :root {
+         :root {
             --accent-color: #A90114;
         }
     </style>
@@ -102,6 +130,14 @@
             mirror: false,
             duration: 1000,
             delay: 0
+        });
+
+        $('.carousel').flickity({
+            wrapAround: true,
+            //autoPlay: 3000,
+            //pauseAutoPlayOnHover: true,
+            selectedAttraction: 0.01,
+            friction: 0.2
         });
     </script>
 </body>
