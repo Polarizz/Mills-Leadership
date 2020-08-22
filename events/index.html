@@ -75,14 +75,23 @@
             </div>
 
             <div class="carousel">
-                <div class="carousel-cell">
-                    <img src="/assets/images/gym.jpg">
+                <div class="carousel-cell" style="background: url(/assets/images/128.jpg)">
+                    <div class="text">
+                        <h1>Event #1</h1>
+                        <h2>Subtitle about the event.</h2>
+                    </div>
                 </div>
-                <div class="carousel-cell">
-                    <img src="/assets/images/millsgym.jpg">
+                <div class="carousel-cell" style="background: url(/assets/images/gym.jpg)">
+                    <div class="text">
+                        <h1>Event #2</h1>
+                        <h2>Subtitle about the event.</h2>
+                    </div>
                 </div>
-                <div class="carousel-cell">
-                    <img src="/assets/images/theater.jpeg">
+                <div class="carousel-cell" style="background: url(/assets/images/theater.jpeg)">
+                    <div class="text">
+                        <h1>Event #3</h1>
+                        <h2>Subtitle about the event.</h2>
+                    </div>
                 </div>
             </div>
         </section>
@@ -137,7 +146,15 @@
             //autoPlay: 3000,
             //pauseAutoPlayOnHover: true,
             selectedAttraction: 0.01,
-            friction: 0.2
+            friction: 0.2,
+            arrowShape: {
+                x0: 15,
+                x1: 50,
+                y1: 20,
+                x2: 50,
+                y2: 5,
+                x3: 80
+            }
         });
     </script>
 </body>

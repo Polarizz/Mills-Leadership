@@ -186,16 +186,20 @@ section.img-block {
 section.img-block .carousel {
     width: 100%;
     max-width: 500px;
-    height: 35vh;
     margin-bottom: 20px;
 }
 
-section.img-block .text {
+section.img-block .carousel,
+section.img-block .flickity-viewport {
+    height: 400px;
+}
+
+section.img-block>.text {
     margin-left: 150px;
     flex-shrink: 6;
 }
 
-section.img-block.alt .text {
+section.img-block.alt>.text {
     margin-left: 0;
     margin-right: 150px;
     flex-shrink: 6;
@@ -214,6 +218,10 @@ section.img-block p {
     letter-spacing: 1px;
 }
 
+.flickity-page-dots .dot {
+    background: #f7f7f7 !important;
+}
+
 .carousel-cell {
     display: flex;
     flex-direction: column;
@@ -222,16 +230,18 @@ section.img-block p {
     width: 100%;
     height: 100%;
     background-size: cover !important;
+    overflow: hidden;
 }
 
 .carousel-cell .text {
+    position: absolute;
     color: white;
     max-width: 1200px;
     z-index: 1;
 }
 
 .carousel-cell .text {
-    font-size: 0.4em !important;
+    font-size: 0.3em !important;
 }
 
 footer {
@@ -325,6 +335,9 @@ footer .footer-section-skinny .container {
     }
     section.img-block {
         flex-direction: column;
+    }
+    section.img-block .carousel {
+        max-width: 1400px;
     }
 }
 
