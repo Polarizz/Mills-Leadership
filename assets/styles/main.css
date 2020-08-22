@@ -380,7 +380,7 @@ footer .footer-section-skinny .container {
         opacity: 1;
     }
     section.hero-section .title:hover {
-        margin: 0;
+        padding: 0;
         transform: scale(1);
         opacity: 100%;
     }
