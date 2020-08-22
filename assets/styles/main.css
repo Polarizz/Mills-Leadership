@@ -273,6 +273,7 @@ footer {
     text-transform: uppercase;
     flex-direction: column;
     overflow-x: hidden;
+    transition: all .3s ease;
 }
 
 footer h2 {
@@ -402,6 +403,15 @@ footer .footer-section-skinny .container {
     }
     p:not(.carousel p) {
         font-size: 1.2em;
+    }
+    footer .footer-section .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        opacity: 1;
+    }
+    footer .footer-section .container svg {
+        display: none;
     }
 }
 
