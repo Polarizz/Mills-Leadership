@@ -25,7 +25,7 @@ h3 {
 
 h4 {
     font-weight: 500;
-    font-size: 1.125em;
+    font-size: 1.2em;
 }
 
 p {
@@ -95,6 +95,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 .statement h2 {
@@ -114,7 +115,7 @@ section {
 }
 
 .header {
-    width: 65%;
+    width: 70%;
     margin-bottom: 100px;
 }
 
@@ -123,7 +124,28 @@ section {
 }
 
 .block {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 125px;
+}
+
+.block img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 125px;
+}
+
+.row img {
+    width: 45%;
+    margin-right: 50px;
+}
+
+.side-title {
+    margin-bottom: 15px;
 }
 
 .content {
@@ -136,4 +158,85 @@ section {
 
 .paragraph {
     width: 55%;
+}
+
+.paragraph#full {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .statement h2 {
+        width: 80%;
+    }
+
+    .header {
+        width: 100%;
+    }   
+
+    .paragraph {
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 490px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    .buttons a {
+        margin: 0px 15px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav img {
+        margin-bottom: 15px;
+    }
+
+    .buttons  {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .buttons a {
+        margin: 0px;
+    }
 }
