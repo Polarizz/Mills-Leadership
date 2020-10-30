@@ -81,7 +81,6 @@ a {
 
 body {
     position: relative;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
     -webkit-font-smoothing: antialiased;
     display: flex;
     flex-direction: column;
