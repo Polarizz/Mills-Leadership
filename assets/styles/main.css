@@ -1,3 +1,38 @@
+@font-face {
+    font-family: 'cera_problack_italic';
+    src: url(/assets/fonts/cera_pro_black_italic.woff) format('woff');
+ }
+ 
+ @font-face {
+    font-family: 'cera_problack';
+    src: url(/assets/fonts/cera_pro_black.woff) format('woff');
+ }
+ 
+ @font-face {
+    font-family: 'cera_probold';
+    src: url(/assets/fonts/cera_pro_bold.woff) format('woff');
+ }
+ 
+ @font-face {
+    font-family: 'cera_prolight';
+    src: url(/assets/fonts/cera_pro_light.woff) format('woff');
+ }
+ 
+ @font-face {
+    font-family: 'cera_promedium';
+    src: url(/assets/fonts/cera_pro_medium.woff) format('woff');
+ }
+ 
+ @font-face {
+    font-family: 'cera_proregular';
+    src: url(/assets/fonts/cera_pro_regular.woff) format('woff');
+ }
+ 
+ @font-face {
+    font-family: 'cera_proitalic';
+    src: url(/assets/fonts/cera_pro_regular_italic.woff) format('woff');
+ }
+
 p,
 h1,
 h2,
@@ -7,28 +42,33 @@ h4 {
 }
 
 h1 {
+    font-family: 'cera_probold';
     font-weight: 600;
     font-size: 6.5em;
     line-height: 1.2;
 }
 
 h2 {
+    font-family: 'cera_probold';
     font-weight: 600;
     font-size: 2.5em;
     line-height: 1.3;
 }
 
 h3 {
+    font-family: 'cera_promedium';
     font-weight: 600;
     font-size: 2em;
 }
 
 h4 {
+    font-family: 'cera_promedium';
     font-weight: 500;
     font-size: 1.2em;
 }
 
 p {
+    font-family: 'cera_promedium';
     font-weight: 400;
     font-size: 1.125em;
     line-height: 1.9; 
@@ -61,7 +101,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 }
 
 .nav img {
@@ -114,6 +154,11 @@ section {
     text-align: right;
 }
 
+.title#hero {
+    text-align: right;
+    margin-bottom: 190px;
+}
+
 .header {
     width: 70%;
     margin-bottom: 100px;
@@ -133,6 +178,10 @@ section {
     width: 100%;
 }
 
+.block#home {
+    margin-bottom: 200px;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -146,6 +195,10 @@ section {
 
 .side-title {
     margin-bottom: 15px;
+}
+
+.home-header {
+    margin-bottom: 35px;
 }
 
 .content {
@@ -164,11 +217,35 @@ section {
     width: 100%;
 }
 
+.image#home {
+    margin-bottom: 20px;
+}
+
+.stretch-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer {
+    margin-bottom: 20px
+}
+
+.footer hr {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.footer img {
+    width: 35px;
+}
+
 @media only screen and (max-width: 1100px) {
     .container {
         width: 90%;
     }
-
 }
 
 @media only screen and (max-width: 640px) {
