@@ -1,36 +1,36 @@
 @font-face {
-    font-family: 'cera_problack_italic';
-    src: url(/assets/fonts/cera_pro_black_italic.woff) format('woff');
+    font-family: "cera_problack_italic";
+    src: url(/assets/fonts/cera_pro_black_italic.woff) format("woff");
  }
  
  @font-face {
-    font-family: 'cera_problack';
-    src: url(/assets/fonts/cera_pro_black.woff) format('woff');
+    font-family: "cera_problack";
+    src: url(/assets/fonts/cera_pro_black.woff) format("woff");
  }
  
  @font-face {
-    font-family: 'cera_probold';
-    src: url(/assets/fonts/cera_pro_bold.woff) format('woff');
+    font-family: "cera_probold";
+    src: url(/assets/fonts/cera_pro_bold.woff) format("woff");
  }
  
  @font-face {
-    font-family: 'cera_prolight';
-    src: url(/assets/fonts/cera_pro_light.woff) format('woff');
+    font-family: "cera_prolight";
+    src: url(/assets/fonts/cera_pro_light.woff) format("woff");
  }
  
  @font-face {
-    font-family: 'cera_promedium';
-    src: url(/assets/fonts/cera_pro_medium.woff) format('woff');
+    font-family: "cera_promedium";
+    src: url(/assets/fonts/cera_pro_medium.woff) format("woff");
  }
  
  @font-face {
-    font-family: 'cera_proregular';
-    src: url(/assets/fonts/cera_pro_regular.woff) format('woff');
+    font-family: "cera_proregular";
+    src: url(/assets/fonts/cera_pro_regular.woff) format("woff");
  }
  
  @font-face {
-    font-family: 'cera_proitalic';
-    src: url(/assets/fonts/cera_pro_regular_italic.woff) format('woff');
+    font-family: "cera_proitalic";
+    src: url(/assets/fonts/cera_pro_regular_italic.woff) format("woff");
  }
 
 p,
@@ -42,29 +42,30 @@ h4 {
 }
 
 h1 {
-    font-family: 'cera_probold';
+    font-family: "cera_probold";
     font-size: 6.5em;
-    line-height: 1.2;
+    line-height: 1.15;
 }
 
 h2 {
-    font-family: 'cera_probold';
+    font-family: "cera_probold";
     font-size: 2.5em;
     line-height: 1.3;
 }
 
 h3 {
-    font-family: 'cera_promedium';
+    font-family: "cera_promedium";
     font-size: 2em;
 }
 
 h4 {
-    font-family: 'cera_promedium';
-    font-size: 1.2em;
+    font-family: "cera_proregular";
+    font-size: 1.3em;
+    line-height: 1.5;
 }
 
 p {
-    font-family: 'cera_promedium';
+    font-family: "cera_promedium";
     font-size: 1.125em;
     line-height: 1.9; 
 }
@@ -83,6 +84,11 @@ body {
     overflow-x: hidden;
     background: #1c1c1c;
     color: white;
+}
+
+img {
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
 }
 
 .container {
@@ -222,8 +228,49 @@ section {
     align-items: flex-end;
 }
 
+.announcement {
+    margin-bottom: 65px;
+}
+
+.announcement h3,
+.announcement h4 {
+    margin-bottom: 20px;
+}
+
+.announcement p {
+    opacity: 0.35;
+}
+
+.igtv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instacolumn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+
+.instablock {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    height: 517px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer {
-    margin-bottom: 20px
+    margin-bottom: 20px;
+}
+
+.footer#top {
+    margin-top: 10em;
+    width: 100%;
 }
 
 .footer hr {
