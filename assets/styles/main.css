@@ -245,13 +245,18 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .instacolumn {
     display: flex;
     flex-direction: column;
     margin-bottom: 3em;
+    max-width: 300px;
+}
+
+.instablock p {
+    max-width: 300px;
 }
 
 .instablock {
