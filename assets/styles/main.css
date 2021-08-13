@@ -42,9 +42,9 @@ h4 {
 }
 
 h1 {
-    font-family: "cera_probold";
-    font-size: 6.5em;
-    line-height: 1.15;
+    font-family: "cera_promedium";
+    font-size: 9em;
+    line-height: 1.1;
 }
 
 h2 {
@@ -82,7 +82,7 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    background: #1c1c1c;
+    background: #EFEFEF;
     color: white;
 }
 
@@ -131,31 +131,16 @@ section {
     width: 100%;
 }
 
-.statement {
+.hero {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 35px;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
-.statement h2 {
-    width: 65%;
-}
-
-.statement img {
-    position: absolute;
-    width: 45%;
-    z-index: -10;
-    margin-left: 250px;
-    margin-top: 110px;
-}
-
-.title {
-    text-align: right;
-}
-
-.title#hero {
-    text-align: right;
+.hero-title {
+    text-align: left;
     margin-bottom: 190px;
 }
 
