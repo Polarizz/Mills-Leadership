@@ -2,32 +2,32 @@
     font-family: "cera_problack_italic";
     src: url(/assets/fonts/cera_pro_black_italic.woff) format("woff");
 }
- 
+
 @font-face {
     font-family: "cera_problack";
     src: url(/assets/fonts/cera_pro_black.woff) format("woff");
 }
- 
+
 @font-face {
     font-family: "cera_probold";
     src: url(/assets/fonts/cera_pro_bold.woff) format("woff");
 }
- 
+
 @font-face {
     font-family: "cera_prolight";
     src: url(/assets/fonts/cera_pro_light.woff) format("woff");
 }
- 
+
 @font-face {
     font-family: "cera_promedium";
     src: url(/assets/fonts/cera_pro_medium.woff) format("woff");
 }
- 
+
 @font-face {
     font-family: "cera_proregular";
     src: url(/assets/fonts/cera_pro_regular.woff) format("woff");
 }
- 
+
 @font-face {
     font-family: "cera_proitalic";
     src: url(/assets/fonts/cera_pro_regular_italic.woff) format("woff");
@@ -36,7 +36,8 @@
 @font-face {
     font-family: 'billabong';
     src: url(/assets/fonts/billabong.woff) format('woff'), /* Modern Browsers */
-         url(/assets/fonts/billabong.ttf) format('truetype'); /* Safari, Android, iOS */
+    url(/assets/fonts/billabong.ttf) format('truetype');
+    /* Safari, Android, iOS */
 }
 
 p,
@@ -97,11 +98,11 @@ a {
 }
 
 body {
-    position: relative;
-    -webkit-font-smoothing: antialiased;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
+    -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     background: #F2F2F2;
     color: #000000;
@@ -116,9 +117,9 @@ img {
     display: flex;
     position: fixed;
     top: 0;
-    align-items: center;
-    justify-content: center;
     width: 100vw;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
     background: rgb(255, 255, 255, 0.5);
     backdrop-filter: blur(50px);
@@ -127,8 +128,8 @@ img {
 
 .nav {
     display: flex;
-    flex-direction: row;
     width: 59vw;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
@@ -141,8 +142,8 @@ img {
 
 .container {
     width: 59vw;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .buttons {
@@ -153,7 +154,7 @@ img {
 .buttons a {
     margin: 0px 30px;
     opacity: 0.25;
-    transition: all 0.75s cubic-bezier(.19,1,.22,1);
+    transition: all 0.75s cubic-bezier(.19, 1, .22, 1);
 }
 
 .buttons a:hover {
@@ -162,20 +163,20 @@ img {
 
 .hero {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 3em;
 }
 
 .hero-title {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 18em;
     position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 18em;
 }
 
 .hero-title img {
@@ -185,38 +186,38 @@ img {
 }
 
 img#dove {
-    width: 160px;
     position: absolute;
     top: 2em;
     left: 31em;
+    width: 160px;
     z-index: 9;
 }
 
 img#hallway {
-    width: 140px;
     position: absolute;
     top: 9em;
     left: 25em;
+    width: 140px;
     z-index: 3;
 }
 
 img#rain {
-    width: 180px;
-    position: absolute; 
+    position: absolute;
     top: 9em;
     left: 36.5em;
+    width: 180px;
     z-index: 0;
 }
 
 .hero-card {
     display: flex;
+    width: 490px;
     flex-direction: row;
     justify-content: space-between;
     padding: 15px 20px;
     background-color: #FFFFFF;
     border-radius: 15px;
     border: 1px solid rgb(0, 0, 0, 0.09);
-    width: 490px;
     -webkit-filter: drop-shadow(0px 15px 39px rgba(0, 0, 0, 0.05));
     filter: drop-shadow(0px 15px 39px rgba(0, 0, 0, 0.05));
 }
@@ -238,49 +239,50 @@ img#rain {
 }
 
 h1#top {
-    z-index: 10;
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 10;
     text-align: center;
 }
 
 h1#bottom {
-    z-index: 1;
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 1;
     text-align: center;
 }
 
 .center {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 5em 0em;
 }
 
 .vl {
     border-left: 1px solid rgb(0, 0, 0, 0.07);
-  }
+}
 
 .quote-block {
-    align-items: initial;
     width: 100%;
-    
+    align-items: initial;
 }
 
 .text-block {
+    width: 100%;
     align-items: initial;
-    width: 100%;    
 }
 
 .row {
@@ -295,10 +297,10 @@ h1#bottom {
 
 .full-box {
     display: flex;
+    width: 100%;
     flex-direction: column;
     background-color: #FFFFFF;
     padding-top: 27em;
-    width: 100%;
     border-radius: 20px;
     margin-bottom: 3.5em;
 }
@@ -311,8 +313,8 @@ h1#bottom {
 .flex-box {
     display: flex;
     flex-direction: column;
-    background-color: #FAFAFA;
     padding: 3em;
+    background-color: #FAFAFA;
     padding-bottom: 17em;
     border-radius: 20px;
 }
@@ -323,6 +325,7 @@ h1#bottom {
 
 .flex-box a:hover {
     text-decoration: underline;
+    -webkit-text-decoration-color: #b62939;
     text-decoration-color: #b62939;
 }
 
@@ -376,16 +379,16 @@ h1#bottom {
 
 .igtv {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .instacolumn {
     display: flex;
+    max-width: 300px;
     flex-direction: column;
     margin-bottom: 3em;
-    max-width: 300px;
 }
 
 .instablock p {
@@ -394,12 +397,12 @@ h1#bottom {
 
 .instablock {
     display: flex;
-    flex-direction: column;
     max-width: 300px;
     height: 517px;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer {
@@ -407,8 +410,8 @@ h1#bottom {
 }
 
 .footer#top {
-    margin-top: 10em;
     width: 100%;
+    margin-top: 10em;
 }
 
 .footer hr {
@@ -434,11 +437,11 @@ h1#bottom {
 
 .carousel-cell {
     display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
     background-size: cover !important;
     background-position: center !important;
     overflow: hidden;
@@ -454,44 +457,35 @@ h1#bottom {
     h1 {
         font-size: 5em;
     }
-
     h2 {
         font-size: 2em;
     }
-
     .buttons {
         display: flex;
         flex-direction: column;
     }
-
     .buttons h4 {
         margin: 10px 0px;
     }
-
     .statement h2 {
         width: 80%;
     }
-
     .header {
         width: 100%;
-    }   
-
+    }
     .paragraph {
         width: 100%;
     }
-
     .content {
         display: flex;
         flex-direction: column;
     }
-
 }
 
 @media only screen and (max-width: 490px) {
     h1 {
         font-size: 4em;
     }
-
     h2 {
         font-size: 1.7em;
     }
