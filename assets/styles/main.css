@@ -121,7 +121,7 @@ img {
     justify-content: center;
     align-items: center;
     z-index: 10;
-    background: rgb(255, 255, 255, 0.5);
+    background: rgb(255, 255, 255, 0.7);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
 }
@@ -187,24 +187,24 @@ img {
 
 img#dove {
     position: absolute;
-    top: 2em;
-    left: 31em;
+    top: 32px;
+    right: calc(50% - 350px);
     width: 160px;
     z-index: 9;
 }
 
 img#hallway {
     position: absolute;
-    top: 9em;
-    left: 25em;
-    width: 140px;
+    top: 120px;
+    right: calc(50% - 170px);
+    width: 160px;
     z-index: 3;
 }
 
 img#rain {
     position: absolute;
-    top: 9em;
-    left: 36.5em;
+    top: 140px;
+    right: calc(50% - 300px);
     width: 180px;
     z-index: 0;
 }
@@ -218,8 +218,26 @@ img#rain {
     background-color: #FFFFFF;
     border-radius: 15px;
     border: 1px solid rgb(0, 0, 0, 0.09);
-    -webkit-filter: drop-shadow(0px 15px 39px rgba(0, 0, 0, 0.05));
-    filter: drop-shadow(0px 15px 39px rgba(0, 0, 0, 0.05));
+    box-shadow: 0px 15px 39px rgba(0, 0, 0, 0.05);
+    transition: all .5s cubic-bezier(.19, 1, .22, 1);
+}
+
+.hero-card * {
+    transition: all .3s cubic-bezier(.19, 1, .22, 1);
+}
+
+.hero-card:hover span {
+    color: black;
+    transform: rotate(10deg);
+}
+
+.hero-card:hover {
+    box-shadow: 0px 15px 80px rgba(0, 0, 0, 0.05);
+    transform: scale(1.03);
+}
+
+.hero-card:hover .center>h6 {
+    color: black !important;
 }
 
 .hero-card fancy {
