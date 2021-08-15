@@ -33,12 +33,19 @@
     src: url(/assets/fonts/cera_pro_regular_italic.woff) format("woff");
  }
 
+ @font-face {
+    font-family: 'billabong';
+    src: url('billabong.ttf') format('truetype');
+}
+
 p,
 h1,
 h2,
 h3,
-h4 {
-    margin: 0
+h4,
+h5,
+h6 {
+    margin: 0;
 }
 
 h1 {
@@ -64,10 +71,23 @@ h4 {
     line-height: 1.5;
 }
 
+h5 {
+    font-family: "cera_proregular";
+    font-size: 1em;
+    line-height: 1;
+}
+
+h6 {
+    font-family: "cera_proregular";
+    font-size: 0.8em;
+    line-height: 1.3;
+}
+
 p {
     font-family: "cera_promedium";
-    font-size: 1.35em;
-    line-height: 1.3; 
+    font-size: 1.3em;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
 }
 
 a {
@@ -91,23 +111,37 @@ img {
     -webkit-user-select: none;
 }
 
-.container {
-    width: 59vw;
+.nav-container {
+    display: flex;
+    position: fixed;
+    top: 0;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    z-index: 10;
+    background: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
 }
 
 .nav {
     display: flex;
     flex-direction: row;
+    width: 59vw;
     justify-content: space-between;
     align-items: center;
-    margin-top: 25px;
-    margin-bottom: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav img {
-    width: 40px;
+    width: 31px;
+}
+
+.container {
+    width: 59vw;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttons {
@@ -125,19 +159,46 @@ img {
     opacity: 1;
 }
 
-.buttons 
-
 .hero {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .hero-title {
-    text-align: left;
-    margin-top: 15em;
+    text-align: initial;
+    margin-bottom: 5em;
+}
+
+.hero-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0, 0.09);
+    width: 490px;
+    -webkit-filter: drop-shadow(0px 15px 25px rgba(0, 0, 0, 0.05));
+    filter: drop-shadow(0px 15px 39px rgba(0, 0, 0, 0.05));
+}
+
+.hero-card fancy {
+    font-family: billabong;
+    font-size: 1.7em;
+    line-height: 1.3;
+    background: -webkit-linear-gradient(left, #ffd439, #fd5949, #d6249f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -3px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section {
@@ -149,9 +210,12 @@ img {
     padding: 5em 0em;
 }
 
+.vl {
+    border-left: 1px solid rgb(0, 0, 0, 0.07);
+  }
+
 .quote-block {
     align-items: initial;
-    padding-top: 10em;
     width: 100%;
     
 }
@@ -164,6 +228,11 @@ img {
 .row {
     display: flex;
     flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
 .full-box {
@@ -190,12 +259,8 @@ img {
     border-radius: 20px;
 }
 
-.flex-box h3 {
-    margin-bottom: 13px;
-}
-
-.flex-box a {
-    margin-top: 13px;
+.flex-box p {
+    margin-top: 15px;
 }
 
 .flex-box a:hover {
