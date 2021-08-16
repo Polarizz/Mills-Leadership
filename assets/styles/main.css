@@ -52,7 +52,7 @@ h6 {
 
 h1 {
     font-family: "cera_promedium";
-    font-size: 9.5em;
+    font-size: 10em;
     line-height: 1.1;
 }
 
@@ -188,7 +188,7 @@ img {
 
 img#dove {
     position: absolute;
-    top: 200px;
+    top: 210px;
     right: calc(50% - 170px);
     width: 160px;
     z-index: 9;
@@ -196,7 +196,7 @@ img#dove {
 
 img#hallway {
     position: absolute;
-    top: 270px;
+    top: 280px;
     right: calc(50% - 60px);
     width: 160px;
     z-index: 3;
@@ -204,7 +204,7 @@ img#hallway {
 
 img#rain {
     position: absolute;
-    top: 280px;
+    top: 290px;
     right: calc(50% - 293px);
     width: 180px;
     z-index: 0;
@@ -229,7 +229,7 @@ img#rain {
 
 .hero-card:hover span {
     color: black;
-    transform: rotate(10deg);
+    transform: rotate(20deg);
 }
 
 .hero-card:hover {
