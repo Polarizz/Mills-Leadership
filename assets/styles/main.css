@@ -52,7 +52,7 @@ h6 {
 
 h1 {
     font-family: "cera_promedium";
-    font-size: 9em;
+    font-size: 9.5em;
     line-height: 1.1;
 }
 
@@ -124,6 +124,7 @@ img {
     background: rgb(255, 255, 255, 0.7);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
+    z-index: 100;
 }
 
 .nav {
@@ -187,24 +188,24 @@ img {
 
 img#dove {
     position: absolute;
-    top: 32px;
-    right: calc(50% - 350px);
+    top: 160px;
+    right: calc(50% - 170px);
     width: 160px;
     z-index: 9;
 }
 
 img#hallway {
     position: absolute;
-    top: 120px;
-    right: calc(50% - 170px);
+    top: 230px;
+    right: calc(50% - 60px);
     width: 160px;
     z-index: 3;
 }
 
 img#rain {
     position: absolute;
-    top: 140px;
-    right: calc(50% - 300px);
+    top: 240px;
+    right: calc(50% - 293px);
     width: 180px;
     z-index: 0;
 }
