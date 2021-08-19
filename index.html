@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
-    <link rel="stylesheet" href="/assets/styles/color.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
@@ -65,9 +64,9 @@
                     <h1 id="bottom"><span style="color: #FFFFFF00;">Lead</span><span style="color: #ffffff;">ership</span></h1>
                 </div>
 
-                <img id="dove" data-aos="fade-up" class="slide-up" src="/assets/images/hero/hero-dove.png">
-                <img id="hallway" class="slide-up-alt1" src="/assets/images/hero/hero-hallway.png">
-                <img id="rain" class="slide-up-alt2" src="/assets/images/hero/hero-rain.png">
+                <img id="dove" data-aos-duration="300" data-aos="zoom-in" class="slide-up" src="/assets/images/hero/hero-dove.png">
+                <img id="hallway" data-aos-duration="500" data-aos="zoom-in" class="slide-up-alt1" src="/assets/images/hero/hero-hallway.png">
+                <img id="rain" data-aos-duration="700" data-aos="zoom-in" class="slide-up-alt2" src="/assets/images/hero/hero-rain.png">
             </div>
 
             <a href="https://www.instagram.com/mhsvikings/" target="_blank">
@@ -104,9 +103,8 @@
                 <h2>Rally</h2>
             </div>
 
-            <div class="text-block">
+            <div class="text-block slide-right">
                 <p style="width: 60%"><span style="font-family: cera_probold">A milestone in motivation.</span> <span style="color: #8A8A8E">At key moments, your metrics will come to life on the screen, like your heart rate or Activity rings. And when you close a ring, it animates to celebrate your effort. It’s the perfect blend of information and inspiration, right when you need it.</span></p>
-
             </div>
         </div>
 
@@ -115,9 +113,8 @@
                 <h2>Club Fair</h2>
             </div>
 
-            <div class="text-block">
+            <div class="text-block slide-right">
                 <p style="width: 60%"><span style="font-family: cera_probold">A milestone in motivation.</span> <span style="color: #8A8A8E">At key moments, your metrics will come to life on the screen, like your heart rate or Activity rings. And when you close a ring, it animates to celebrate your effort. It’s the perfect blend of information and inspiration, right when you need it.</span></p>
-
             </div>
         </div>
 
@@ -143,8 +140,9 @@
 
     <script>
         AOS.init({
-            duration: 1000,
-            delay: 0
+            duration: 600,
+            delay: 0,
+            easing: "ease-out-quart"
         });
     </script>
 
